@@ -112,7 +112,7 @@ The same selection shows elsewhere: 74 of 76 drawn matches end up labelled "away
 
 ## Where this started
 
-A team project testing whether scoring the first goal wins you the match in a season of La-Liga. The question is a good one and the team set it up properly: clear hypothesis, real data, and a limitations slide that flags the risk of selection bias. The data assembly holds up completely and everything above runs on the same 380 matches. However, since I have the data and know it has not been utilized enough, this current project is trying to expand on more perspectives of the season and the league.
+A team project from my master's at USC, with Jayson, Aman and Vincent. The project is about testing whether scoring the first goal wins you the match in a season of La-Liga. The question is a good one and the team set it up properly: clear hypothesis, real data, and a limitations slide that flags the risk of selection bias. The data assembly holds up completely and everything above runs on the same 380 matches. However, since I have the data and know it has not been utilized enough, this current project is trying to expand on more perspectives of the season and the league.
 
 ## Running it
 
