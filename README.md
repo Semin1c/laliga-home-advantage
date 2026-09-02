@@ -27,7 +27,7 @@ There are only two ways to score more: create more chances, or finish the ones y
 
 So the advantage is **territorial**. Playing at home gets teams into better positions more often, without changing much about what happens once they're there.
 
-Worth being careful: "Home teams get into better areas" describes the pattern, but it does not simply self-explained it. It could come from visitors' travel fatigue, familiarity with the pitch, more adventurous home tactics, referee decisions that don't show up in results, or a crowd effect too subtle for attendance to capture. The next two sections will rule two of those out in statistical level.
+Worth being careful: "home teams get into better areas" describes the pattern, it doesn't explain it. It could come from visitors' travel fatigue, familiarity with the pitch, more adventurous home tactics, referee decisions that don't show up in results, or a crowd effect too subtle for attendance to capture. The next two sections rule two of them out.
 
 ## Finding 2: the crowd looks like the answer, until you notice who's playing
 
@@ -57,7 +57,7 @@ Each referee worked about nineteen matches. To see whether a spread that wide me
 
 Random shuffling produces an average spread of **0.294**. The real spread is **0.296**. About **half of random shuffles come out at least this wide**.
 
-Nineteen matches isn't enough to separate a referee from luck. That doesn't prove no referee favors home teams, but it means one season of *results* can't detect it. Cards and penalties would be more sensitive, and they aren't in this data, which worth a close looking later.
+Nineteen matches isn't enough to separate a referee from luck. That doesn't prove no referee favors home teams, but it means one season of *results* can't detect it. Cards and penalties would be more sensitive, and they aren't in this data, which is worth a closer look later.
 
 ## Finding 4: the biggest numbers in the season, and what they can support
 
@@ -65,7 +65,7 @@ Nineteen matches isn't enough to separate a referee from luck. That doesn't prov
 
 Real Madrid scored **18.3 more goals** than their chances were worth. Girona, **14.1**. At the other end Rayo Vallecano finished **13.3 short**. A 31-goal spread that reads like a ranking of who can finish.
 
-Same test as the referees. Simulate a league where everyone has imaginary stable scoring ability, where every chance goes in at exactly the rate its xG says, and play 4,000 seasons of it. Pure luck produces an average spread of **6.93** goals. The real one is **8.49**. Nearly one simulated season in ten is at least this spread out.
+Same test as the referees. Simulate a league where every side finishes at exactly the rate its chances deserve, so no team is any better or worse in front of goal than any other, and play 4,000 seasons of it. Pure luck produces an average spread of **6.93** goals. The real one is **8.49**. Nearly one simulated season in ten is at least this spread out.
 
 The real table sits inside what luck alone generates. That isn't proof finishing skill doesn't exist, instead it just means one season of twenty clubs can't demonstrate it.
 
