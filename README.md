@@ -27,7 +27,7 @@ There are only two ways to score more: create more chances, or finish the ones y
 
 So the advantage is **territorial**. Playing at home gets teams into better positions more often, without changing much about what happens once they're there.
 
-Worth being careful: that locates the effect, it doesn't explain it. "Home teams get into better areas" describes the pattern. It could come from visitors' travel fatigue, familiarity with the pitch, more adventurous home tactics, referee decisions that don't show up in results, or a crowd effect too subtle for attendance to capture. The next two sections rule two of those out. They don't identify the winner.
+Worth being careful: "Home teams get into better areas" describes the pattern, but it does not simply self-explained it. It could come from visitors' travel fatigue, familiarity with the pitch, more adventurous home tactics, referee decisions that don't show up in results, or a crowd effect too subtle for attendance to capture. The next two sections will rule two of those out in statistical level.
 
 ## Finding 2: the crowd looks like the answer, until you notice who's playing
 
@@ -39,11 +39,11 @@ In the biggest quarter of crowds, home teams took **2.14 points a match**. In th
 
 The problem is which clubs have the biggest stadiums. The Bernabéu, the Camp Nou, the Metropolitano — the same clubs that would win most of those matches in an empty ground. A club's points total and its average home crowd move together at **r = 0.68**.
 
-So the crowd needs testing with the teams held constant. Add the quality gap between the two sides and attendance falls to **0.0022 points per thousand fans (p = 0.54)**. Nothing you'd act on.
+So the crowd needs testing with the teams held constant. Add the quality gap between the two sides and attendance falls to **0.0022 points per thousand fans (p = 0.54)**.
 
 A second check points the same way. Instead of comparing clubs to each other, compare each club to **itself**: does Sevilla do better when the Sánchez-Pizjuán is fuller than its own average? If anything, slightly worse. The reason is mundane — a club's biggest gate is usually the day Real Madrid come to town.
 
-What this shows is narrower than "crowds don't matter." It shows that **attendance, as recorded here, carries no information once you know who's playing.** Attendance is a blunt proxy: it can't see noise, atmosphere, or how much of the ground is home support. A crowd effect could exist and be invisible to it.
+What this shows is narrower than "crowds don't matter." It shows that **attendance, as recorded here, carries no information once you know who's playing.** Attendance itself is not a sufficient number because it can't see noise, atmosphere, or how much of the ground is home support. A crowd effect could exist and be invisible to it.
 
 **Meanwhile the home edge itself survives.** Hold both clubs' quality constant and an evenly matched home side still creates about **0.364 more expected goals**. Same as the raw average, so the advantage isn't something only big clubs generate.
 
@@ -57,7 +57,7 @@ Each referee worked about nineteen matches. To see whether a spread that wide me
 
 Random shuffling produces an average spread of **0.294**. The real spread is **0.296**. About **half of random shuffles come out at least this wide**.
 
-Nineteen matches isn't enough to separate a referee from luck. That doesn't prove no referee favours home teams — it means one season of *results* can't detect it. Cards and penalties would be more sensitive, and they aren't in this data.
+Nineteen matches isn't enough to separate a referee from luck. That doesn't prove no referee favors home teams, but it means one season of *results* can't detect it. Cards and penalties would be more sensitive, and they aren't in this data, which worth a close looking later.
 
 ## Finding 4: the biggest numbers in the season, and what they can support
 
@@ -65,11 +65,11 @@ Nineteen matches isn't enough to separate a referee from luck. That doesn't prov
 
 Real Madrid scored **18.3 more goals** than their chances were worth. Girona, **14.1**. At the other end Rayo Vallecano finished **13.3 short**. A 31-goal spread that reads like a ranking of who can finish.
 
-Same test as the referees. Simulate a league where nobody has any finishing ability, where every chance goes in at exactly the rate its xG says, and play 4,000 seasons of it. Pure luck produces an average spread of **6.93** goals. The real one is **8.49**. Nearly one simulated season in ten is at least this spread out.
+Same test as the referees. Simulate a league where everyone has imaginary stable scoring ability, where every chance goes in at exactly the rate its xG says, and play 4,000 seasons of it. Pure luck produces an average spread of **6.93** goals. The real one is **8.49**. Nearly one simulated season in ten is at least this spread out.
 
-The real table sits inside what luck alone generates. That isn't proof finishing skill doesn't exist — it means one season of twenty clubs can't demonstrate it.
+The real table sits inside what luck alone generates. That isn't proof finishing skill doesn't exist, instead it just means one season of twenty clubs can't demonstrate it.
 
-The practical use is still real, just different from what the table appears to offer. If Real Madrid's +18.3 is largely variance, the sensible expectation is that **it regresses** — useful before setting next season's baseline, or paying a premium for a striker off one hot year. What the data won't support is ranking clubs on finishing ability.
+The practical use is still real, just different from what the table appears to offer. If Real Madrid's +18.3 is largely variance, the sensible expectation is that **it regresses**, which is useful before setting next season's baseline, or paying a premium for a striker off one hot year. What the data won't support is ranking clubs on finishing ability.
 
 ## What the season supports
 
@@ -80,8 +80,6 @@ The practical use is still real, just different from what the table appears to o
 | **Referees explain it** | Not detectable. Nineteen matches each is too few to separate from chance |
 | **Home sides finish better** | Not supported. Conversion is statistically indistinguishable |
 | **What causes the territorial edge** | Open. Travel, familiarity and tactics are all live candidates |
-
-Three of these follow the same shape: a table that looks convincing, and a null model that reproduces it. On one season of one league, asking what a number would look like if the effect didn't exist matters more than the choice of model.
 
 ## What I'd do next
 
@@ -114,9 +112,7 @@ The same selection shows elsewhere: 74 of 76 drawn matches end up labelled "away
 
 ## Where this started
 
-A team project testing whether scoring the first goal wins you the match. The question is a good one and the team set it up properly: clear hypothesis, real data, and a limitations slide that flags the risk of selection bias. The data assembly holds up completely — everything above runs on the same 380 matches.
-
-It ran aground on the data rather than the method. The `first_goal` column doesn't record what its name says, and the details are in the methodology note above. Goal timings simply aren't in this file, so the original question can't be answered with it. That's what redirected the work toward what the season *can* answer. The original report and deck are in `original-project/`.
+A team project testing whether scoring the first goal wins you the match in a season of La-Liga. The question is a good one and the team set it up properly: clear hypothesis, real data, and a limitations slide that flags the risk of selection bias. The data assembly holds up completely and everything above runs on the same 380 matches. However, since I have the data and know it has not been utilized enough, this current project is trying to expand on more perspectives of the season and the league.
 
 ## Running it
 
@@ -125,7 +121,3 @@ pip install -r requirements.txt
 python3 laliga_analysis.py
 python3 data_quality_audit.py
 ```
-
-Both print every number quoted above, so the figures and claims regenerate from the committed data.
-
-Team project from my master's at USC, with Jayson, Aman and Vincent. I led the modelling; the rebuild here is mine.
